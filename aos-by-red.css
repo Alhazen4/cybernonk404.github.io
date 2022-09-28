@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-size: 30px;
+    font-family: sans-serif;
+    background: #ebebeb;
+  }
+  .container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; 
+  }
+
+  .scroll-area {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+  .div{
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1cd8d2, #93edc7);
+    color: white;
+    margin: 100px 0;
+    border-radius: 7px;
+  }
+
+  .first-page {
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-page-title {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    /* animation: 1s ease-in 1s 1 slideInFromBottom; */
+}
+
+.second-page {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-page-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+  

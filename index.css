@@ -1,0 +1,250 @@
+@font-face {
+    font-family: ubuntu-regular;
+    src: url(./src/Font/Ubuntu-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu-regular;
+    scroll-behavior: smooth;
+}
+
+
+
+html, body {
+    overflow: auto;;
+    /* scroll-snap-type: y mandatory; */
+}
+
+section {
+    /* scroll-snap-align: start;s */
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+nav a {
+    color: aliceblue;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+.li-nav-center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.li-nav-center>a:not(:last-child) {
+    color: white;
+    margin-right: 5em;
+}
+
+.li-nav-left {
+    margin-left: 5em;
+}
+
+.li-nav-right>a {
+    margin-right: 5em;
+    color:aliceblue;
+    float: right;
+    line-height: 53px;
+}
+
+.li-nav-right>a:is(:last-child) {
+    margin-right: 2em;
+}
+
+.first-page {
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page-title {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.second-page {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-page-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.third-page {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.third-page>p {
+    margin-left: 1.6em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 50px;
+}
+
+.third-page-row {
+    content: "";
+    display: table;
+}
+
+.third-page-column {
+    background-color: black;
+    float: left;
+    width: 39.8em;
+    height: 30em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-page-column> *,
+.fourth-page-column> * {
+    margin-bottom: 20px;
+}
+
+.third-page-column>p {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.third-page-column>a,
+.fourth-page-column>a {
+    color: blue;
+    text-decoration: none;
+}
+
+.third-page-column>img,
+.fourth-page-column>img {
+    width: 480px;
+    height: 238px;
+}
+
+.fourth-page {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.fourth-page>p {
+    color: white;
+    margin-left: 1.6em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 50px;
+}
+
+.fourth-page-column {
+    background-color: white;
+    float: left;
+    width: 39.8em;
+    height: 30em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-page-column>p {
+    font-size: 25px;
+    color: black;
+}
+
+.about-page {
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.about-page-title>h1 {
+    color: black;
+    margin-left: 1.6em;
+    padding-top: 1.5em;
+    font-size: 50px;
+}
+
+.about-page-title>p { 
+    color: black;
+    margin-left: 3.3em;
+    padding-bottom: 1em;
+    font-size: 25px;
+}
+
+.contact-page {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.skill-card {
+    color: black;
+    float: left;
+    width: 17.4em;
+    height: 25em;
+    margin-left: 5em;
+}
+
+.skill-card>ul {
+    list-style: none;
+}
+
+.contact-page-title>button {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    margin-bottom: 50px;
+}
+
+.contact-page-title>button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
