@@ -115,6 +115,14 @@ nav>ul>li>a {
     font-size: 50px;
 }
 
+.third-page>a {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    margin-top: 30px;
+    margin-left: 44.5%;
+}
+
 .third-page-row {
     content: "";
     display: table;
@@ -205,6 +213,29 @@ nav>ul>li>a {
     font-size: 25px;
 }
 
+.skill-list {
+    display: flex;
+    margin-left: 5em;
+}
+
+.skill-list>div {
+    background-color: black;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: 19.2em;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+.skill-list>div:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
 .contact-page {
     background-color: black;
     color: white;
@@ -221,30 +252,7 @@ nav>ul>li>a {
     text-align: center;
 }
 
-.skill-card {
-    color: black;
-    float: left;
-    width: 17.4em;
-    height: 25em;
-    margin-left: 5em;
-}
-
-.skill-card>ul {
-    list-style: none;
-}
-
-.contact-page-title>button {
-    padding: 10px;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 0.5em;
-    margin-bottom: 50px;
-}
-
-.contact-page-title>button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: 1s;
+.contact-page-title>p>span>a {
+    color: blue;
+    text-decoration: none;
 }
